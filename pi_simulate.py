@@ -9,18 +9,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 """
-Aproximate pi using Monte Carlo Simulations: Randomly draw from two uniform
+Approximate pi using Monte Carlo Simulations: Randomly draw from two uniform
 Distributions gove coordinates of a square with sidelentgh 1. The probability
 to draw a coordiante that lies within the circle with radius 0.5 is given by 
                   
                     Pr(in circle) = 0.5^2*pi/1 = pi/4
                 
-Solvinf for pi gives 
+Solving for pi gives 
 
                           pi = Pr(in circle)/4
                           
-Pr(in circle) is simulated by Monte Carlo Simulations as number of drawn 
-coordinates of a sample of increasing size that lie within the circle.                 
+Pr(in circle) is simulated by Monte Carlo Simulations as relative frequency 
+of drawn coordinates of a sample of increasing size that lie within the circle.                 
 """
 
 
