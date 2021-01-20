@@ -55,8 +55,12 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# Bootstrap Particle Filter
 
+###############################################################################
+###############################################################################
+
+# Bootstrap Particle Filter, weights are resampled if the effective sample 
+# size falls under a certain threshold
 
 # State densitiy at t=0 (prior beliefs about the state)
 
@@ -68,6 +72,7 @@ posterior = [prior_init]
 posterior_mean = []
 posterior_max = []
 weights_init = np.ones(M)/M
+
 for i in range(101):
     
     #print(i)
@@ -107,15 +112,6 @@ for i in range(101):
     posterior.append(states_resample)
     posterior_mean.append(np.mean(states_resample))
     posterior_max.append(np.max(states_resample))
-
-
-
-plt.plot(x_t, color='k', label='true state', linestyle ='--')
-plt.plot(posterior_mean, color='red', label='filtered posterior mean')
-plt.legend()
-plt.grid()
-plt.show()
-    
 
 
 ###############################################################################
