@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 from scipy.optimize import brentq
 
+"""
+An implementation of the tempered Particle Filter of Frank Schorfheide and Edward Herbst (2019) 
+and a comparision to the simple bootstrap particle filter by Gordon, Salmond, Smith (2003) based
+on the RMSE of the filtered posterior mean.
+"""
+
 # simulate data
 
 x_0 = 0
