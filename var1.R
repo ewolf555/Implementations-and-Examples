@@ -7,7 +7,7 @@ library(VAR.etp)
 library(dplyr)
 
 
-setwd("D:/Lütkepohl")
+setwd("...")
 
 # Import functions
 source("boot_functions.R")
