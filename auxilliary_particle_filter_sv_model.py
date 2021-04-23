@@ -70,7 +70,7 @@ plt.grid()
 plt.show()
 
 
-plt.plot(np.asarray(ln_sigma_2_t), color="r", label="$\log(\sigma_t^2)$")
+plt.plot(ln_sigma_2_t, color="r", label="$\log(\sigma_t^2)$")
 plt.title("Plot for $\log(\sigma_t^2)$")
 plt.legend()
 plt.grid()
